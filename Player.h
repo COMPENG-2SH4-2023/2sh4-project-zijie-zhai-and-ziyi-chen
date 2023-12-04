@@ -14,20 +14,21 @@ class Player
     // You will include more data members and member functions to complete your design.
 
     public:
-        enum Dir {UP, DOWN, LEFT, RIGHT, STOP};  // This is the direction state
+        enum Dir {UP, DOWN, LEFT, RIGHT, STOP};  // direction states
 
         Player(GameMechs* thisGMRef);
         ~Player();
 
-        void getPlayerPos(objPos &returnPos); // Upgrade this in iteration 3.
+        objPosArrayList* getPlayerPos(); // returns a reference of playerposList
+        char getPlayerDir();
         void updatePlayerDir();
         void movePlayer();
 
     private:
-        objPos playerPos;   // Upgrade this in iteration 3.       
+        objPosArrayList *playerPosList;   // a pointer to arrayList       
         enum Dir myDir;
 
-        // Need a reference to the Main Game Mechanisms
+        // reference to the Main Game Mechanisms
         GameMechs* mainGameMechsRef;
 };
 

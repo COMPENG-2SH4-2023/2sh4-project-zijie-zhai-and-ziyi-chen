@@ -1,5 +1,127 @@
 #include "objPosArrayList.h"
+// #include <iostream>
 
-// Paste your CUTE Tested implementation here.
-// Paste your CUTE Tested implementation here.
-// Paste your CUTE Tested implementation here.
+// using namespace std;
+
+// Check lecture contents on general purpose array list construction, 
+// and modify it to support objPos array list construction.
+
+objPosArrayList::objPosArrayList()
+{
+    aList = new objPos[ARRAY_MAX_CAP];  // 256 elements on heap
+    listSize = 0;                       // no valid element in the list at start
+    arrayCapacity = ARRAY_MAX_CAP;      // array capacity set to maximum
+
+}
+
+objPosArrayList::~objPosArrayList()
+{
+    delete[] aList; // delete every elements in the array aList
+
+}
+
+int objPosArrayList::getSize()
+{
+    return listSize;
+
+}
+
+void objPosArrayList::insertHead(objPos thisPos)
+{
+    if (listSize == arrayCapacity)
+    {
+        return;
+
+    }
+
+    else
+    {
+        for (int i = listSize; i > 0; i --)
+        {
+            aList[i].setObjPos(aList[i - 1]); // with the copy constructor in objPos.cpp,
+                                              // shuffle the last element in the array back to the next pos, 
+                                              // i.e. [i - 1] to [i], 
+                                              // then second last element, [(i - 1) - 1] to [i - 1], and so on, 
+                                              // untill [0] is placed to [1] and left empty
+
+        }
+
+        aList[0].setObjPos(thisPos); // write the element passed in to the head of the array with the copy constructor
+        listSize ++;
+
+    }
+
+}
+
+void objPosArrayList::insertTail(objPos thisPos)
+{
+    if (listSize == arrayCapacity) // don't insert if the arrayList is full
+    {
+        return;
+
+    }
+    
+    else
+    {
+        aList[listSize].setObjPos(thisPos);
+        listSize ++;
+
+    }
+
+}
+
+void objPosArrayList::removeHead()
+{   
+    if (listSize == 0) // don't remove if the arrayList is empty
+    {
+       return;
+
+    }
+
+    else
+    {
+        for (int i = 1; i < listSize - 1; i ++)
+        {
+            aList[i - 1].setObjPos(aList[i]); 
+
+        }
+
+        listSize --;
+
+    }
+
+}
+
+void objPosArrayList::removeTail()
+{
+    if (listSize == 0) // don't remove if the arrayList is empty
+    {
+        return;
+
+    }
+
+    else
+    {
+        listSize --;
+
+    }
+
+}
+
+void objPosArrayList::getHeadElement(objPos &returnPos)
+{
+    returnPos.setObjPos(aList[0]);
+
+}
+
+void objPosArrayList::getTailElement(objPos &returnPos)
+{
+    returnPos.setObjPos(aList[listSize - 1]);
+
+}
+
+void objPosArrayList::getElement(objPos &returnPos, int index)
+{
+    returnPos.setObjPos(aList[index]);
+
+}

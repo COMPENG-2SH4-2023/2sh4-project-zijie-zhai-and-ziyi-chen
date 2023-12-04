@@ -1,0 +1,131 @@
+Dr. Memory version 2.6.0 build 0 built on Sep 21 2023 17:48:48
+Windows version: WinVer=105;Rel=2009;Build=22621;Edition=Core
+Dr. Memory results for pid 2688: "Project.exe"
+Application cmdline: ""D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen\Project.exe""
+Recorded 124 suppression(s) from default D:\DrMemory-Windows-2.6.0\bin\suppress-default.txt
+
+Error #1: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW 
+# 1 KERNELBASE.dll!FindNextFileA 
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.409 in thread 14196
+Note: instruction: cmp    %eax $0x0000001a
+
+Error #2: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW 
+# 1 KERNELBASE.dll!FindNextFileA 
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.410 in thread 14196
+Note: instruction: data16 mov    %cx -> 0x00000234(%ebx,%eax,2)
+
+Error #3: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW 
+# 1 KERNELBASE.dll!FindNextFileA 
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.414 in thread 14196
+Note: instruction: cmp    %eax $0x00000206
+
+Error #4: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW 
+# 1 KERNELBASE.dll!FindNextFileA 
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.414 in thread 14196
+Note: instruction: data16 mov    %cx -> 0x2c(%ebx,%eax,2)
+
+Error #5: UNINITIALIZED READ: reading 0x013d1330-0x013d1334 4 byte(s)
+# 0 KERNELBASE.dll!FindNextFileW 
+# 1 KERNELBASE.dll!FindNextFileA 
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.415 in thread 14196
+Note: instruction: test   0x38(%edi) $0x00000400
+
+Error #6: UNINITIALIZED READ: reading register eax
+# 0 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 1 __mingw_readdir                    [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.417 in thread 14196
+Note: instruction: cmp    %eax $0x00000010
+
+Error #7: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW 
+# 1 KERNELBASE.dll!FindNextFileA 
+# 2 .text                              [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 3 __mingw_glob                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 4 _setargv                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:45]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.417 in thread 14196
+Note: instruction: test   %eax %eax
+
+Error #8: UNINITIALIZED READ: reading 0x0061fe94-0x0061fe98 4 byte(s)
+# 0 msvcrt.dll!_getch_nolock
+# 1 msvcrt.dll!_getch    
+# 2 MacUILib_getChar               [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/MacUILib.c:32]
+# 3 GetInput                       [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/Project.cpp:68]
+# 4 main                           [D:\University\2nd Year\COE2SH4\Projects\2SH4_Project\2sh4-project-zijie-zhai-and-ziyi-chen/Project.cpp:37]
+Note: @0:00:04.398 in thread 14196
+Note: instruction: cmp    0xffffffe0(%ebp) $0x00000000
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:     24
+	Error #   2:     24
+	Error #   3:      7
+	Error #   4:      7
+	Error #   5:      7
+	Error #   6:      7
+	Error #   7:      6
+	Error #   8:      4
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      0 unique,     0 total unaddressable access(es)
+      8 unique,    86 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      5 potential error(s) (suspected false positives)
+         (details: D:\DrMemory-Windows-2.6.0\drmemory\logs\DrMemory-Project.exe.2688.000\potential_errors.txt)
+      1 potential leak(s) (suspected false positives)
+         (details: D:\DrMemory-Windows-2.6.0\drmemory\logs\DrMemory-Project.exe.2688.000\potential_errors.txt)
+     24 unique,    24 total,   6815 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: D:\DrMemory-Windows-2.6.0\drmemory\logs\DrMemory-Project.exe.2688.000\results.txt
